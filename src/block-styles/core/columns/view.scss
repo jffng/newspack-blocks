@@ -1,75 +1,75 @@
-@import '../../../shared/sass/variables';
-@import '../../../shared/sass/mixins';
+// @import '../../../shared/sass/variables';
+// @import '../../../shared/sass/mixins';
 
-.wp-block-columns {
-	.wp-block-column {
-		margin-bottom: 32px;
+// .wp-block-columns {
+// 	.wp-block-column {
+// 		margin-bottom: 32px;
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+// 		&:last-child {
+// 			margin-bottom: 0;
+// 		}
+// 	}
 
-	@include media( mobile ) {
-		flex-wrap: nowrap;
-		margin-left: -16px;
-		max-width: calc( 100% + 32px );
-		width: calc( 100% + 32px );
+// 	@include media( mobile ) {
+// 		flex-wrap: nowrap;
+// 		margin-left: -16px;
+// 		max-width: calc( 100% + 32px );
+// 		width: calc( 100% + 32px );
 
-		.wp-block-column {
-			margin-bottom: 0;
-			margin-left: 16px;
-			margin-right: 16px;
-		}
-	}
+// 		.wp-block-column {
+// 			margin-bottom: 0;
+// 			margin-left: 16px;
+// 			margin-right: 16px;
+// 		}
+// 	}
 
-	&.is-style-borders {
-		> .wp-block-column {
-			position: relative;
-			margin-bottom: 64px;
+// 	&.is-style-borders {
+// 		> .wp-block-column {
+// 			position: relative;
+// 			margin-bottom: 64px;
 
-			&:last-child {
-				margin-bottom: 0;
-			}
+// 			&:last-child {
+// 				margin-bottom: 0;
+// 			}
 
-			&::after {
-				border: 0 solid $color__border;
-				border-top-width: 1px;
-				bottom: -32px;
-				content: '';
-				left: 0;
-				position: absolute;
-				right: 0;
-			}
+// 			&::after {
+// 				border: 0 solid $color__border;
+// 				border-top-width: 1px;
+// 				bottom: -32px;
+// 				content: '';
+// 				left: 0;
+// 				position: absolute;
+// 				right: 0;
+// 			}
 
-			&:last-child::after {
-				display: none;
-			}
+// 			&:last-child::after {
+// 				display: none;
+// 			}
 
-			@include media( mobile ) {
-				margin-bottom: 0;
+// 			@include media( mobile ) {
+// 				margin-bottom: 0;
 
-				&::after {
-					border-right-width: 1px;
-					border-top-width: 0;
-					bottom: 0;
-					left: auto;
-					right: -16px;
-					top: 0;
-				}
-			}
+// 				&::after {
+// 					border-right-width: 1px;
+// 					border-top-width: 0;
+// 					bottom: 0;
+// 					left: auto;
+// 					right: -16px;
+// 					top: 0;
+// 				}
+// 			}
 
-			@include media( tablet ) {
-				&::after {
-					right: -24px;
-				}
-			}
+// 			@include media( tablet ) {
+// 				&::after {
+// 					right: -24px;
+// 				}
+// 			}
 
-			@include media( desktop ) {
-				&::after {
-					right: -32px;
-				}
-			}
-		}
-	}
-}
+// 			@include media( desktop ) {
+// 				&::after {
+// 					right: -32px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
